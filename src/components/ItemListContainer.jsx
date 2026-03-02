@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function ItemListContainer({ greeting }) {
   const [products, setProducts] = useState([]);
@@ -88,6 +89,9 @@ function ItemListContainer({ greeting }) {
                     <h3>{product.title}</h3>
                     <p className="product-description">{product.description}</p>
                     <p className="product-price">USD {product.price}</p>
+                    <Link to={`/product/${product.id}`} className="detail-link">
+                      Ver producto
+                    </Link>
                   </div>
                 </article>
               ))}
