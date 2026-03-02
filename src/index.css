@@ -67,6 +67,26 @@ body {
   color: #b91c1c;
 }
 
+.filter-bar {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.filter-bar label {
+  font-weight: 600;
+}
+
+.filter-bar select {
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  padding: 0.45rem 0.6rem;
+  background: #ffffff;
+  color: #1e293b;
+}
+
 .products-grid {
   margin-top: 2rem;
   display: grid;
@@ -124,5 +144,9 @@ body {
   .nav-links {
     width: 100%;
     justify-content: center;
+  }
+
+  .filter-bar {
+    flex-direction: column;
   }
 }
